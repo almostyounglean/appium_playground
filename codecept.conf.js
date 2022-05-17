@@ -10,13 +10,27 @@ setCommonPlugins();
 exports.config = {
   tests: './tests/**/*_test.js',
   output: './output',
+
   helpers: {
     Appium: {
-      app: 'http://localhost',
+      app: 'bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c',
       platform: 'Android',
-      device: 'emulator',
+      os_version: '9.0',
+      port: 4444,
+      host: 'hub-cloud.browserstack.com',
+      user: 'sibedgeqagmailco1',
+      key: '9HQpXqTuymjzHzMKzC4C',
+      device: 'Google Pixel 3',
     },
   },
+
+  plugins: {
+    allure: {
+      enabled: true,
+      outputDir: './output',
+    },
+  },
+
   include: {
     I: './steps_file.js',
   },
