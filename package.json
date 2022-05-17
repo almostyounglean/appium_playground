@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "codeceptjs": "^3.3.2"
+  },
+  "devDependencies": {
+    "webdriverio": "^6.12.1"
+  }
+}
